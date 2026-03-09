@@ -8,7 +8,7 @@ const passvalue = pass.value;
 
  if(uservalue === 'admin' && passvalue === 'admin123' ){
     alert('Sign In Successfull');
-    window.location.assign("index.html");
+    window.location.assign("home.html");
  }else{
     alert('Invalid Information');
     return;
