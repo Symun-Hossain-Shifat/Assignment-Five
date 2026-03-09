@@ -13,10 +13,48 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
 <body>
-    
+    <!-- Header Section -->
+    <header class="">
+        <div class="navbar bg-base-100 shadow-sm flex flex-col md:flex-row gap-5 md:justify-between">
+  <div class=" flex gap-2 flex-1 items-center font-bold mx-5">
+  
+   <img class="w-10" src="assets/github-logo.png" alt="">
+   <h1>GitHub Issues Tracker</h1>
+  </div>
+  <div class="flex gap-2 mx-5">
+   <label class="input">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="m21 21-4.3-4.3"></path>
+    </g>
+  </svg>
+  <input type="search" id="searchfield" required placeholder="Search issue" />
+</label>
+    <button id="searchbtn" class="btn btn-primary">
+     <span>Search</span>
+    </button>
+        
+</div>
+        </div>
+    </header>
 
+<main class="w-10/11 mx-auto ">
+ <!-- BUtton section -->
+     <section id="button-container" class="flex flex-col md:flex-row gap-2 p-5 shadow-md  ">
+        <button id="allbtn" class="btn  btn-outline btn-active btn-primary ">All</button>
+        <button id="openbtn" class="btn btn-outline btn-primary">Open</button>
+        <button id="closedbtn" class="btn btn-outline btn-primary">Closed</button>
+     </section>
+
+</main>
 
 
     <script src="home.js"></script>
